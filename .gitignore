@@ -10,6 +10,7 @@
 data/
 models/
 outputs/
+!outputs/
 !outputs/img15.PNG
 !outputs/img25.PNG
 
