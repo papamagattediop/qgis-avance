@@ -1,0 +1,20 @@
+# Fichiers de configuration dérivés et métadonnées QGIS
+*.aux.xml
+*.qix
+*.qpj
+*.qgs
+*.qgz
+*.qmd
+
+# Données et sorties lourdes
+data/
+models/
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+
+# Système
+.DS_Store
+Thumbs.db
