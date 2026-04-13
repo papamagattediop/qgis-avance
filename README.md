@@ -36,7 +36,7 @@ L’étude utilise des images Sentinel-2 et des indices spectraux pour générer
 - `data/raw/` : données source (Sentinel-2, shapefiles d’entrée)
 - `data/processed/` : produits dérivés et résultats intermédiaires
 - `models/` : modèles de classification entraînés
-- `outputs/` : résultats finaux et exports
+- `outputs/` : résultats finaux et exports, y compris les images de prédiction pour 2015 et 2025
 
 ## Données
 
@@ -102,8 +102,17 @@ python scripts/calcul_applicatication_seuil.py
 ## Résultats
 
 - Classification SVM de l’occupation du sol pour 2015 et 2025
+- Images de prédiction générées après calcul pour 2015 et 2025 dans le dossier `outputs/`
 - Cartes de classes : Eau, Bâti, Sol nu, Sol cultivé, Jachère, Zone humide
 - Évaluation par matrice de confusion, Overall Accuracy et coefficient Kappa
+
+### Visualisation des prédictions
+
+Près des résultats de prédiction, les images suivantes sont disponibles :
+
+![Prédiction 2015](outputs/img15.PNG)
+
+![Prédiction 2025](outputs/img25.PNG)
 
 ## Contribuer
 
